@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎂 Age Calculator</h1>
+            <p>Calculate your exact age and find out interesting facts about your life!</p>
+        </header>
+        
+        <div class="calculator">
+            <form id="ageForm">
+                <div class="input-group">
+                    <label for="birthDate">Select your birth date:</label>
+                    <input type="date" id="birthDate" required>
+                </div>
+                
+                <button type="submit">Calculate My Age</button>
+            </form>
+            
+            <div id="results" class="results hidden">
+                <h2>Your Age Details</h2>
+                <div class="age-grid">
+                    <div class="age-item">
+                        <span class="age-number" id="years">0</span>
+                        <span class="age-label">Years</span>
+                    </div>
+                    <div class="age-item">
+                        <span class="age-number" id="months">0</span>
+                        <span class="age-label">Months</span>
+                    </div>
+                    <div class="age-item">
+                        <span class="age-number" id="days">0</span>
+                        <span class="age-label">Days</span>
+                    </div>
+                </div>
+                
+                <div class="detailed-info">
+                    <h3>Additional Information</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Total Days Lived:</strong>
+                            <span id="totalDays">0</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Total Hours:</strong>
+                            <span id="totalHours">0</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Total Minutes:</strong>
+                            <span id="totalMinutes">0</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Next Birthday:</strong>
+                            <span id="nextBirthday">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Days Until Birthday:</strong>
+                            <span id="daysUntilBirthday">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Day of Week Born:</strong>
+                            <span id="dayOfWeekBorn">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
