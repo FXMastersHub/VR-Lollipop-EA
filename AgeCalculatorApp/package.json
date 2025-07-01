@@ -9,10 +9,15 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-community/datetimepicker": "^8.4.2",
     "expo": "~53.0.15",
+    "expo-linear-gradient": "^14.1.5",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.4"
+    "react-native": "0.79.4",
+    "react-native-animatable": "^1.4.0",
+    "react-native-linear-gradient": "^2.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
